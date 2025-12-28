@@ -1,4 +1,4 @@
-import certificateImage from "@assets/stock_images/certificado_profissi_a9ca369e.jpg";
+import certificateImage from "@assets/stock_images/certificado_original.png";
 import { Check, Shield } from "lucide-react";
 
 export function CertificateSection() {
