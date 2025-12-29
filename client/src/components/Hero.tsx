@@ -53,7 +53,7 @@ export function Hero() {
               Torne-se um <span className="text-primary">Eletricista Profissional</span>
             </h1>
             
-            <p className="text-base sm:text-lg md:text-xl text-gray-300 md:max-w-xl mx-auto font-light leading-relaxed text-center">
+            <p className="text-base sm:text-lg md:text-xl text-white md:max-w-xl mx-auto font-light leading-relaxed text-center">
               Domine a elétrica residencial e predial mesmo começando do absoluto zero. 
               Curso completo com <span className="text-white font-semibold">Certificado</span> válido em todo o Brasil.
             </p>
@@ -70,7 +70,7 @@ export function Hero() {
               </Button>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400 pt-2 sm:pt-4">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-white pt-2 sm:pt-4">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-green-500" />
                 <span>Garantia de 7 Dias</span>

@@ -30,8 +30,8 @@ export function Bonuses() {
               Presentes Para Você <span className="text-primary">Acelerar</span>
             </h2>
           </div>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Além de todo o conteúdo do curso, você receberá gratuitamente 3 ferramentas essenciais para sua entrada no mercado.
+          <p className="text-white max-w-2xl mx-auto">
+            Além de todo o conteúdo do curso, você receberá gratuitamente 4 ferramentas essenciais para sua entrada no mercado.
           </p>
         </div>
 
@@ -118,7 +118,7 @@ export function Bonuses() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-center flex-1 flex flex-col justify-between">
-                    <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                    <p className="text-white text-sm leading-relaxed mb-4">
                       {bonus.description}
                     </p>
                     {/* Espaço vazio para manter altura uniforme */}

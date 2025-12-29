@@ -30,7 +30,7 @@ export function Modules() {
           <div className="mb-4">
             <p className="text-primary font-bold text-lg md:text-xl">Aulas em Vídeo + Apostila</p>
           </div>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-white text-lg max-w-2xl mx-auto">
             Um cronograma completo, do básico ao avançado, desenvolvido para te preparar para o mercado de trabalho real.
           </p>
         </div>
@@ -47,7 +47,7 @@ export function Modules() {
                   <div className="w-6 h-6 md:w-7 md:h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs md:text-sm mr-1.5 md:mr-2 shrink-0 group-hover:bg-primary group-hover:text-background transition-colors">
                     {index + 1}
                   </div>
-                  <p className="text-gray-200 font-medium text-xs md:text-sm leading-tight">{module}</p>
+                  <p className="text-white font-medium text-xs md:text-sm leading-tight">{module}</p>
                 </div>
               ))}
             </div>

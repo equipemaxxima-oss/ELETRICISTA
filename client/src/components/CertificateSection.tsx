@@ -37,7 +37,7 @@ export function CertificateSection() {
                 Certificado Válido em <span className="text-primary">Todo o Brasil</span>
               </h2>
             </div>
-            <p className="text-gray-400 text-lg">
+            <p className="text-white text-lg">
               Ao finalizar o curso, você recebe automaticamente seu certificado. Com ele, você pode comprovar sua competência e atuar legalmente em todo o território nacional.
             </p>
             
@@ -46,16 +46,16 @@ export function CertificateSection() {
                 <Shield className="w-8 h-8 text-primary shrink-0" />
                 <div>
                   <h4 className="text-white font-bold mb-1">Reconhecido pelo Mercado</h4>
-                  <p className="text-sm text-gray-400">Válido para concursos públicos, horas complementares e processos seletivos.</p>
+                  <p className="text-sm text-white">Válido para concursos públicos, horas complementares e processos seletivos.</p>
                 </div>
               </div>
               
               <ul className="grid gap-3">
-                 <li className="flex items-center gap-3 text-gray-300">
+                 <li className="flex items-center gap-3 text-white">
                     <Check className="w-5 h-5 text-green-500" />
                     <span>Carga horária detalhada</span>
                  </li>
-                 <li className="flex items-center gap-3 text-gray-300">
+                 <li className="flex items-center gap-3 text-white">
                     <Check className="w-5 h-5 text-green-500" />
                     <span>Assinado pela diretoria</span>
                  </li>

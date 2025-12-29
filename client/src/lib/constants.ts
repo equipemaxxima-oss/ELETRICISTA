@@ -82,40 +82,26 @@ export const COURSE_CONTENT = {
   ],
   packages: [
     {
-      name: "Curso Completo",
-      description: "Básico",
-      originalPrice: "197,00",
-      price: "27,99",
-      included: [
-        "Curso Completo Online: Eletricista",
-        "Certificado GRÁTIS Válido para todo o Brasil.",
-        "Bônus: 12 LIVROS GRATUITOS best sellers para baixar",
-        "7 Dias de Garantia Incondicional"
-      ],
-      highlighted: false,
-      link: "https://pay.hotmart.com/E82907236E?off=ha8efo4w&checkoutMode=10&bid=1708016430164"
-    },
-    {
-      name: "Oferta",
-      description: "Pacote intermediário",
+      name: "OFERTA",
+      description: "Pacote básico",
       badge: null,
       originalPrice: "278,00",
-      price: "67,99",
+      price: "197,00",
       included: [
         "Curso Completo Online: Eletricista",
-        "Bônus 01: Carta de Recomendação Profissional",
-        "Bônus 02: Currículo de Alto Impacto",
-        "Bônus 03: Carta de Estágio",
+        "Bônus 01: 12 LIVROS GRATUITOS para baixar",
+        "Bônus 02: Carta de Recomendação Profissional",
+        "Bônus 03: Currículo de Alto Impacto",
+        "Bônus 04: Carta de Estágio",
         "Certificado GRÁTIS Válido para todo o Brasil.",
-        "Bônus: 12 LIVROS GRATUITOS para baixar",
         "7 Dias de Garantia Incondicional"
       ],
       highlighted: true,
       link: "https://pay.hotmart.com/E82907236E?off=0phkqnl0&checkoutMode=10&bid=1703881276091"
     },
     {
-      name: "Combo 4 Cursos",
-      description: "Maior economia",
+      name: "SUPER OFERTA ➜ Maior economia",
+      description: "Combo COMPLETO ➜ 4 Cursos + 4 BÔNUS",
       originalPrice: "788,00",
       price: "97,00",
       included: [

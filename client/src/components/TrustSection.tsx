@@ -27,7 +27,7 @@ export function TrustSection() {
                 Este curso é confiável?
               </h2>
             </div>
-            <p className="text-xl md:text-2xl text-gray-300 relative z-10">
+            <p className="text-xl md:text-2xl text-white relative z-10">
               Fique tranquilo! <span className="text-primary font-extrabold text-2xl md:text-3xl drop-shadow-[0_0_15px_rgba(245,158,11,0.8)] animate-pulse-glow">Nosso curso é 100% confiável</span>. Somos do <span className="text-primary font-bold">Instituto Profissionalize Maxxima</span> e já profissionalizamos mais de <span className="text-primary font-bold">25 mil alunos</span>.
             </p>
           </div>
@@ -47,7 +47,7 @@ export function TrustSection() {
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-lg mb-2">Cursos Profissionalizantes EAD 100% Online</h3>
-                    <p className="text-gray-400">
+                    <p className="text-white">
                       Nossos cursos são profissionalizantes todos na modalidade EAD 100% on-line com 📲 vídeo aulas, Apostila completa e certificado válido 🧑‍🎓
                     </p>
                   </div>
@@ -59,7 +59,7 @@ export function TrustSection() {
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-lg mb-2">Material Completo Liberado Imediatamente</h3>
-                    <p className="text-gray-400">
+                    <p className="text-white">
                       Todo material: Vídeo aulas, Apostila e Certificado já são liberados no momento da matrícula em um login e senha exclusivos de cada aluno em nossa plataforma, que poderá acessar pelo <Phone className="w-4 h-4 inline" /> telefone ou <Laptop className="w-4 h-4 inline" /> computador.
                     </p>
                   </div>
@@ -71,7 +71,7 @@ export function TrustSection() {
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-lg mb-2">1 Ano de Acesso Completo</h3>
-                    <p className="text-gray-400">
+                    <p className="text-white">
                       ✔️ Tendo 1 ano de acesso podendo estudar a hora que quiser quantas vezes quiser por 1 ano
                     </p>
                   </div>
@@ -83,7 +83,7 @@ export function TrustSection() {
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-lg mb-2">Certificado Reconhecido pelo MEC</h3>
-                    <p className="text-gray-400">
+                    <p className="text-white">
                       ✅ Nosso certificado é reconhecido como cursos complementares e temos a autorização do MEC para veicular este curso, lembrando que ele tem validade em todo território nacional 🇧🇷, e assim que tiver a conclusão do curso, pode atuar como profissional nesta área. 🎓
                     </p>
                   </div>
@@ -95,7 +95,7 @@ export function TrustSection() {
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-lg mb-2">Curso EAD com Prática? SIM! 💻✅</h3>
-                    <p className="text-gray-400">
+                    <p className="text-white">
                       Todos os nossos cursos possuem atividades práticas, onde o professor orienta passo a passo como o aluno deve praticar, além de propor exercícios para aplicar o que foi aprendido durante as aulas! 🧠
                     </p>
                   </div>
@@ -107,7 +107,7 @@ export function TrustSection() {
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-lg mb-2">Site Seguro e Pagamento pela Hotmart 🔒</h3>
-                    <p className="text-gray-400">
+                    <p className="text-white">
                       Nosso site é 100% seguro e todos os pagamentos são processados pela plataforma Hotmart, uma das maiores e mais confiáveis plataformas de pagamento do Brasil. Seus dados estão protegidos e o pagamento é totalmente seguro! ✅
                     </p>
                   </div>

@@ -49,7 +49,7 @@ export function CourseBundle() {
                     <div className="w-full max-w-xs h-8 sm:h-12 md:h-16 bg-primary/30 blur-2xl rounded-full"></div>
                   </div>
                 </h3>
-                <ul className="space-y-1.5 sm:space-y-2 text-gray-300 text-sm sm:text-base">
+                <ul className="space-y-1.5 sm:space-y-2 text-white text-sm sm:text-base">
                   <li className="flex items-center gap-2 justify-center md:justify-start">
                     <span className="text-primary font-bold">✓</span>
                     <span>Curso eletricista profissional</span>
@@ -71,7 +71,7 @@ export function CourseBundle() {
 
               {/* Informações Adicionais */}
               <div className="space-y-1.5 sm:space-y-2 pt-3 sm:pt-4 border-t border-white/10">
-                <ul className="space-y-1.5 sm:space-y-2 text-gray-300 text-xs sm:text-sm md:text-base">
+                <ul className="space-y-1.5 sm:space-y-2 text-white text-xs sm:text-sm md:text-base">
                   <li className="flex items-center gap-2 justify-center md:justify-start">
                     <span className="text-primary font-bold">✓</span>
                     <span>Cursos Profissionalizantes EAD 100% Online</span>
@@ -97,19 +97,19 @@ export function CourseBundle() {
                 <ul className="space-y-2 sm:space-y-3">
                   <li className="flex items-start gap-2 sm:gap-3">
                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 shrink-0 mt-0.5 sm:mt-1" />
-                    <span className="text-gray-300 text-sm sm:text-base">Iniciantes absolutos (do zero)</span>
+                    <span className="text-white text-sm sm:text-base">Iniciantes absolutos (do zero)</span>
                   </li>
                   <li className="flex items-start gap-2 sm:gap-3">
                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 shrink-0 mt-0.5 sm:mt-1" />
-                    <span className="text-gray-300 text-sm sm:text-base">Quem busca uma nova profissão rápida</span>
+                    <span className="text-white text-sm sm:text-base">Quem busca uma nova profissão rápida</span>
                   </li>
                   <li className="flex items-start gap-2 sm:gap-3">
                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 shrink-0 mt-0.5 sm:mt-1" />
-                    <span className="text-gray-300 text-sm sm:text-base">Sem exigência de Ensino Médio completo</span>
+                    <span className="text-white text-sm sm:text-base">Sem exigência de Ensino Médio completo</span>
                   </li>
                   <li className="flex items-start gap-2 sm:gap-3">
                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 shrink-0 mt-0.5 sm:mt-1" />
-                    <span className="text-gray-300 text-sm sm:text-base">Quem busca uma qualificação profissional com uma boa renda</span>
+                    <span className="text-white text-sm sm:text-base">Quem busca uma qualificação profissional com uma boa renda</span>
                   </li>
                 </ul>
               </div>

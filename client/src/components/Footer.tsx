@@ -24,7 +24,7 @@ export function Footer() {
                 <h3 className="text-2xl md:text-3xl font-heading font-bold text-white">
                   INSTITUTO <span className="text-primary">PROFISSIONALIZE MAXXIMA</span>
                 </h3>
-                <p className="text-gray-500 max-w-md">
+                <p className="text-white max-w-md">
                   Formando profissionais qualificados para o mercado de trabalho com excelência e preço acessível.
                 </p>
               </div>
@@ -82,10 +82,10 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-600 text-sm text-center md:text-left">
+          <p className="text-white text-sm text-center md:text-left">
             © 2025 Instituto Profissionalize Maxxima. Todos os direitos reservados. CNPJ – 43.774.046/0001-70
           </p>
-          <div className="flex items-center gap-2 text-gray-600 text-sm">
+          <div className="flex items-center gap-2 text-white text-sm">
             <ShieldCheck className="w-4 h-4" />
             <span>Site 100% Seguro</span>
           </div>

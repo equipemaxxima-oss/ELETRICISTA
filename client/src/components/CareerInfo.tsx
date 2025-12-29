@@ -20,7 +20,7 @@ export function CareerInfo() {
               Por que ser um <span className="text-primary">Eletricista?</span>
             </h2>
           </div>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             Uma das profissões mais essenciais e bem pagas do mercado. Alta demanda e estabilidade garantida.
           </p>
         </div>
@@ -31,9 +31,9 @@ export function CareerInfo() {
               <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-500/20 transition-colors">
                 <Hammer className="w-8 h-8 text-blue-500" />
               </div>
-              <CardTitle className="text-xl text-white">O que faz um Eletricista?</CardTitle>
+              <CardTitle className="text-xl text-primary">O que faz um Eletricista?</CardTitle>
             </CardHeader>
-            <CardContent className="text-center text-gray-400">
+            <CardContent className="text-justify text-white">
               <p>
                 Um eletricista realiza a instalação, manutenção e reparo de sistemas elétricos. Isso inclui trabalhos como a fiação elétrica, instalação de luminárias, tomadas e interruptores, resolução de problemas em circuitos elétricos e garantir a segurança elétrica em residências, edifícios comerciais ou industriais.
               </p>
@@ -45,9 +45,9 @@ export function CareerInfo() {
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                 <HardHat className="w-8 h-8 text-primary" />
               </div>
-              <CardTitle className="text-xl text-white">Onde Trabalha Eletricista?</CardTitle>
+              <CardTitle className="text-xl text-primary">Onde Trabalha Eletricista?</CardTitle>
             </CardHeader>
-            <CardContent className="text-center text-gray-400">
+            <CardContent className="text-justify text-white">
               <p>
                 Um eletricista pode trabalhar em áreas como construção civil, realizando instalações elétricas em residências, prédios comerciais e industriais. Além disso, eletricistas também podem atuar em indústrias, realizando manutenção elétrica em equipamentos e sistemas industriais.
               </p>
@@ -59,9 +59,9 @@ export function CareerInfo() {
               <div className="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-green-500/20 transition-colors">
                 <Banknote className="w-8 h-8 text-green-500" />
               </div>
-              <CardTitle className="text-xl text-white">Quanto Ganha um Eletricista?</CardTitle>
+              <CardTitle className="text-xl text-primary">Quanto Ganha um Eletricista?</CardTitle>
             </CardHeader>
-            <CardContent className="text-center text-gray-400">
+            <CardContent className="text-justify text-white">
               <p>
                 Os salários dos eletricistas podem variar significativamente dependendo de vários fatores, incluindo a localização geográfica, nível de experiência, tipo de empregador e especializações adicionais. No Brasil, o salário médio de um eletricista varia geralmente entre <span className="text-white font-bold">R$ 2.000 a R$ 5.000</span> por mês. Podendo até duplicar trabalhando como autônomo especializado.
               </p>

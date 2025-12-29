@@ -29,7 +29,7 @@ export function FAQ() {
               <AccordionTrigger className="text-white hover:text-primary hover:no-underline py-4 text-left text-lg md:text-xl font-semibold">
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-400 pb-4">
+              <AccordionContent className="text-white pb-4">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>
