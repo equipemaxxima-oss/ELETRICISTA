@@ -132,13 +132,6 @@ export function Pricing() {
                 </div>
               </div>
 
-              {/* Badge */}
-              {pkg.badge && (
-                <div className="absolute -top-3 sm:-top-4 left-1/2 -translate-x-1/2 bg-primary text-black px-3 sm:px-4 py-1 rounded-full font-bold text-[10px] sm:text-xs uppercase tracking-widest whitespace-nowrap z-20">
-                  {pkg.badge}
-                </div>
-              )}
-
               <CardHeader className="text-center pb-2 pt-6 sm:pt-8 pr-12 sm:pr-16 md:pr-20 pl-4 sm:pl-6">
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{pkg.name}</h3>
                 <p className="text-gray-400 text-xs sm:text-sm">{pkg.description}</p>
@@ -208,7 +201,7 @@ export function Pricing() {
                 </div>
               </CardContent>
             </Card>
-          ))}
+            ))}
         </div>
 
         {/* Explicação dos Pacotes */}
