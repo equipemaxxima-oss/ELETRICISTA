@@ -26,12 +26,14 @@ export default function Home() {
         />
         
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider pl-16 sm:pl-20 md:pl-24 lg:pl-28 pr-2 sm:pr-4">
-          <span className="text-center">🎓 Últimas vagas com <span className="bg-black text-primary px-2 sm:px-3 py-1 rounded-md font-extrabold text-xs sm:text-base md:text-lg animate-pulse inline-block">BOLSA DE ESTUDOS</span>!</span>
+          <span className="text-center">🎓 Últimas vagas com <span className="bg-black text-primary px-2 sm:px-3 py-1 rounded-md font-extrabold text-xs sm:text-base md:text-lg animate-pulse inline-block">BOLSA DE ESTUDO</span>!</span>
           <button 
             onClick={() => document.getElementById('oferta')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-[#003d82] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-extrabold transition-all hover:scale-105 animate-soft-pulse uppercase text-xs sm:text-sm md:text-base shadow-lg border-2 border-[#00a8ff] cursor-pointer w-full sm:w-auto max-w-full"
+            className="relative bg-[#003d82] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-extrabold transition-all hover:scale-105 animate-soft-pulse uppercase text-xs sm:text-sm md:text-base shadow-[0_0_30px_rgba(0,168,255,0.8),0_0_60px_rgba(0,168,255,0.6)] border-2 border-[#00a8ff] cursor-pointer w-full sm:w-auto max-w-full overflow-hidden"
           >
-            QUERO MINHA BOLSA
+            {/* Efeito de brilho interno */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
+            <span className="relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]">QUERO MINHA BOLSA</span>
           </button>
         </div>
       </div>

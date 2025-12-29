@@ -15,9 +15,18 @@ export function TrustSection() {
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="w-full max-w-4xl h-24 md:h-32 bg-primary/20 blur-3xl rounded-full"></div>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white relative z-10 drop-shadow-[0_0_20px_rgba(245,158,11,0.6)]">
-              Este curso é confiável?
-            </h2>
+            <div className="flex items-center justify-center gap-3 relative z-10">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(245,158,11,0.6)] ring-2 ring-primary/30">
+                <img 
+                  src="/images/logo.png" 
+                  alt="Instituto Profissionalize" 
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-[0_0_20px_rgba(245,158,11,0.6)]">
+                Este curso é confiável?
+              </h2>
+            </div>
             <p className="text-xl md:text-2xl text-gray-300 relative z-10">
               Fique tranquilo! <span className="text-primary font-extrabold text-2xl md:text-3xl drop-shadow-[0_0_15px_rgba(245,158,11,0.8)] animate-pulse-glow">Nosso curso é 100% confiável</span>. Somos do <span className="text-primary font-bold">Instituto Profissionalize Maxxima</span> e já profissionalizamos mais de <span className="text-primary font-bold">25 mil alunos</span>.
             </p>

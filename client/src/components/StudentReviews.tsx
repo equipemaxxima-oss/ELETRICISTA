@@ -38,9 +38,18 @@ export function StudentReviews() {
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="w-full max-w-3xl h-12 sm:h-16 md:h-20 bg-primary/50 blur-xl rounded-full"></div>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white relative z-10 drop-shadow-[0_0_20px_rgba(245,158,11,0.8)] text-shadow-[0_0_30px_rgba(245,158,11,0.6)] px-4">
-              O que os alunos dizem sobre o nosso curso eletricista profissional?
-            </h2>
+            <div className="flex items-center justify-center gap-3 relative z-10 px-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(245,158,11,0.6)] ring-2 ring-primary/30">
+                <img 
+                  src="/images/logo.png" 
+                  alt="Instituto Profissionalize" 
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-[0_0_20px_rgba(245,158,11,0.8)] text-shadow-[0_0_30px_rgba(245,158,11,0.6)]">
+                O que os alunos dizem sobre o nosso curso eletricista profissional?
+              </h2>
+            </div>
           </div>
 
           {/* Grid de Depoimentos e Redes Sociais - 3 colunas, 2 linhas com tamanhos uniformes */}

@@ -18,9 +18,18 @@ export function Bonuses() {
       <div className="container px-4 md:px-6 relative z-10">
         <div className="text-center mb-16 space-y-4">
           <span className="text-primary font-bold tracking-widest uppercase text-sm">Bônus Exclusivos</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
-            Presentes Para Você <span className="text-primary">Acelerar</span>
-          </h2>
+          <div className="flex items-center justify-center gap-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(245,158,11,0.6)] ring-2 ring-primary/30">
+              <img 
+                src="/images/logo.png" 
+                alt="Instituto Profissionalize" 
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold text-white">
+              Presentes Para Você <span className="text-primary">Acelerar</span>
+            </h2>
+          </div>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Além de todo o conteúdo do curso, você receberá gratuitamente 3 ferramentas essenciais para sua entrada no mercado.
           </p>

@@ -8,9 +8,18 @@ export function CareerInfo() {
       <div className="container px-4 md:px-6">
         <div className="text-center mb-16 space-y-4">
           <Badge variant="outline" className="border-primary text-primary px-4 py-1">Carreira</Badge>
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
-            Por que ser um <span className="text-primary">Eletricista?</span>
-          </h2>
+          <div className="flex items-center justify-center gap-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(245,158,11,0.6)] ring-2 ring-primary/30">
+              <img 
+                src="/images/logo.png" 
+                alt="Instituto Profissionalize" 
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold text-white">
+              Por que ser um <span className="text-primary">Eletricista?</span>
+            </h2>
+          </div>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Uma das profissões mais essenciais e bem pagas do mercado. Alta demanda e estabilidade garantida.
           </p>

@@ -16,11 +16,20 @@ export function StudentTestimonial() {
               <div className="w-full max-w-2xl h-16 md:h-20 bg-primary/30 blur-2xl rounded-full"></div>
             </div>
             
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white text-center relative z-10 drop-shadow-[0_0_20px_rgba(245,158,11,0.8)]">
-              <span className="bg-gradient-to-r from-primary via-primary/90 to-primary bg-clip-text text-transparent">
-                Depoimento de Aluno do Curso EAD Eletricista Profissional
-              </span>
-            </h2>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4 relative z-10">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(245,158,11,0.6)] ring-2 ring-primary/30 shrink-0">
+                <img 
+                  src="/images/logo.png" 
+                  alt="Instituto Profissionalize" 
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white text-center relative z-10 drop-shadow-[0_0_20px_rgba(245,158,11,0.8)]">
+                <span className="bg-gradient-to-r from-primary via-primary/90 to-primary bg-clip-text text-transparent">
+                  Depoimento de Aluno do Curso EAD Eletricista Profissional
+                </span>
+              </h2>
+            </div>
             
             {/* Linha decorativa abaixo do título */}
             <div className="mt-4 flex items-center justify-center gap-4">
@@ -32,11 +41,11 @@ export function StudentTestimonial() {
 
           {/* Vídeo com contorno destacado */}
           <div className="relative">
-            {/* Efeito de brilho ao redor do vídeo */}
-            <div className="absolute -inset-2 bg-gradient-to-r from-primary via-primary/50 to-primary rounded-xl blur-xl opacity-50 animate-pulse"></div>
-            <div className="absolute -inset-1 bg-primary/30 rounded-lg blur-md"></div>
+            {/* Efeito de brilho ao redor do vídeo - reduzido */}
+            <div className="absolute -inset-2 bg-gradient-to-r from-primary/30 via-primary/20 to-primary/30 rounded-xl blur-xl opacity-30"></div>
+            <div className="absolute -inset-1 bg-primary/15 rounded-lg blur-md"></div>
             
-            <div className="relative aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-[0_0_40px_rgba(245,158,11,0.4)] border-4 border-primary/80 ring-4 ring-primary/30">
+            <div className="relative aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-[0_0_20px_rgba(245,158,11,0.2)] border-4 border-primary/60 ring-2 ring-primary/20">
               <iframe
                 width="100%"
                 height="100%"

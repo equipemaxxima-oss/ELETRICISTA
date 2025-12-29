@@ -8,16 +8,24 @@ export function CertificateSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           <div className="order-2 lg:order-1 relative">
-             {/* Glow effect */}
-             <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
-             {/* Efeito de brilho ao redor da imagem */}
-             <div className="absolute -inset-2 bg-gradient-to-r from-primary via-primary/50 to-primary rounded-xl blur-xl opacity-50 animate-pulse"></div>
-             <div className="absolute -inset-1 bg-primary/30 rounded-lg blur-md"></div>
+             {/* Glow effect - reduzido */}
+             <div className="absolute inset-0 bg-primary/10 blur-[80px] rounded-full"></div>
+             {/* Efeito de brilho ao redor da imagem - reduzido */}
+             <div className="absolute -inset-2 bg-gradient-to-r from-primary/30 via-primary/20 to-primary/30 rounded-xl blur-xl opacity-30"></div>
+             <div className="absolute -inset-1 bg-primary/15 rounded-lg blur-md"></div>
              <img 
               src={certificateImage} 
               alt="Certificado do Curso" 
-              className="relative w-full drop-shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-500 border-4 border-primary/80 ring-4 ring-primary/30 shadow-[0_0_40px_rgba(245,158,11,0.4)]"
+              className="relative w-full drop-shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-500 border-4 border-primary/60 ring-2 ring-primary/20 shadow-[0_0_20px_rgba(245,158,11,0.2)]"
              />
+             {/* Imagem do Ministério abaixo do certificado - centralizada e piscando */}
+             <div className="absolute -bottom-8 sm:-bottom-10 md:-bottom-12 left-1/2 -translate-x-1/2 flex justify-center w-full z-10">
+               <img
+                 src="/images/MINISTERIO EDUCACAO.jpg"
+                 alt="Ministério da Educação - Brasil"
+                 className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain animate-pulse drop-shadow-[0_0_5px_rgba(245,158,11,0.4)]"
+               />
+             </div>
           </div>
 
           <div className="order-1 lg:order-2 space-y-6 relative">
@@ -28,12 +36,6 @@ export function CertificateSection() {
               <h2 className="text-3xl md:text-5xl font-bold text-white">
                 Certificado Válido em <span className="text-primary">Todo o Brasil</span>
               </h2>
-              {/* Selo do Ministério */}
-              <img
-                src="/images/MINISTERIO EDUCACAO.jpg"
-                alt="Ministério da Educação - Brasil"
-                className="h-8 md:h-10 lg:h-12 w-auto object-contain opacity-90"
-              />
             </div>
             <p className="text-gray-400 text-lg">
               Ao finalizar o curso, você recebe automaticamente seu certificado. Com ele, você pode comprovar sua competência e atuar legalmente em todo o território nacional.

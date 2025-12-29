@@ -3,6 +3,36 @@ import { Zap } from "lucide-react";
 
 export function FloatingCTA() {
   const [isVisible, setIsVisible] = useState(false);
+  const [remaining, setRemaining] = useState(5);
+
+  // Contador regressivo baseado no tempo na página
+  useEffect(() => {
+    const startTime = Date.now();
+    
+    const updateCounter = () => {
+      const elapsed = Math.floor((Date.now() - startTime) / 1000); // segundos
+      
+      if (elapsed >= 300) { // 5 minutos
+        setRemaining(1);
+      } else if (elapsed >= 120) { // 2 minutos
+        setRemaining(2);
+      } else if (elapsed >= 60) { // 1 minuto
+        setRemaining(3);
+      } else if (elapsed >= 30) { // 30 segundos
+        setRemaining(4);
+      } else {
+        setRemaining(5);
+      }
+    };
+
+    // Atualiza imediatamente
+    updateCounter();
+    
+    // Atualiza a cada segundo
+    const interval = setInterval(updateCounter, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -92,18 +122,21 @@ export function FloatingCTA() {
         <div className="relative z-10 text-center whitespace-nowrap">
           <p className="text-xs line-through text-black/60 font-semibold">DE R$ 788,00</p>
           <p className="text-base font-extrabold">POR R$ 97,00</p>
-          <p className="text-xs font-bold mt-0.5">COM BOLSA DE ESTUDOS</p>
+          <p className="text-xs font-bold mt-0.5">COM BOLSA DE ESTUDO</p>
+          <p className="text-xs font-extrabold mt-1 text-red-600 animate-pulse">{remaining} RESTANTES</p>
         </div>
       </button>
 
       {/* Botão Flutuante */}
       <button
         onClick={scrollToOffer}
-        className="bg-primary hover:bg-primary/90 text-black font-extrabold text-sm md:text-base px-5 py-3 md:px-6 md:py-4 rounded-full uppercase tracking-wider shadow-[0_0_30px_rgba(245,158,11,0.8)] animate-pulse-glow transition-all hover:scale-110 flex items-center gap-2 border-2 border-black/20 whitespace-nowrap cursor-pointer"
+        className="relative bg-primary hover:bg-primary/90 text-black font-extrabold text-sm md:text-base px-5 py-3 md:px-6 md:py-4 rounded-full uppercase tracking-wider shadow-[0_0_50px_rgba(245,158,11,1),0_0_100px_rgba(245,158,11,0.8)] animate-pulse-glow transition-all hover:scale-110 flex items-center gap-2 border-2 border-black/20 whitespace-nowrap cursor-pointer overflow-hidden"
       >
-        <Zap className="w-4 h-4 md:w-5 md:h-5" />
-        <span className="hidden sm:inline">QUERO GARANTIR MINHA VAGA</span>
-        <span className="sm:hidden">GARANTIR VAGA</span>
+        {/* Efeito de brilho interno */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer"></div>
+        <Zap className="w-4 h-4 md:w-5 md:h-5 relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]" />
+        <span className="hidden sm:inline relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]">QUERO GARANTIR MINHA VAGA</span>
+        <span className="sm:hidden relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]">GARANTIR VAGA</span>
       </button>
     </div>
   );

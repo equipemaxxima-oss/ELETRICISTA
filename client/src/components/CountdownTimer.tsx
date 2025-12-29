@@ -97,10 +97,12 @@ export function CountdownTimer() {
               {/* Botão CTA */}
               <button
                 onClick={scrollToOffer}
-                className="w-full md:w-auto mx-auto bg-gradient-to-b from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-black font-extrabold text-lg md:text-xl px-8 py-4 rounded-xl uppercase tracking-wider shadow-[0_0_30px_rgba(245,158,11,0.6)] transition-all hover:scale-105 flex items-center justify-center gap-3 cursor-pointer"
+                className="relative w-full md:w-auto mx-auto bg-gradient-to-b from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-black font-extrabold text-lg md:text-xl px-8 py-4 rounded-xl uppercase tracking-wider shadow-[0_0_50px_rgba(245,158,11,1),0_0_100px_rgba(245,158,11,0.8)] transition-all hover:scale-105 flex items-center justify-center gap-3 cursor-pointer overflow-hidden"
               >
-                <Zap className="w-6 h-6" />
-                GARANTIR MINHA VAGA AGORA
+                {/* Efeito de brilho interno */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer"></div>
+                <Zap className="w-6 h-6 relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]" />
+                <span className="relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]">GARANTIR MINHA VAGA AGORA</span>
               </button>
             </div>
           </Card>

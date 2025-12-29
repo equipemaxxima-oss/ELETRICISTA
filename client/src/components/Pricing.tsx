@@ -17,9 +17,18 @@ export function Pricing() {
             <span className="font-extrabold uppercase tracking-widest text-base md:text-lg relative z-10">Oferta por tempo limitado</span>
           </div>
           
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
-            Escolha o Melhor <span className="text-primary">Pacote Para Você</span>
-          </h2>
+          <div className="flex items-center justify-center gap-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(245,158,11,0.6)] ring-2 ring-primary/30">
+              <img 
+                src="/images/logo.png" 
+                alt="Instituto Profissionalize" 
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold text-white">
+              Escolha o Melhor <span className="text-primary">Pacote Para Você</span>
+            </h2>
+          </div>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Três opções incríveis de investimento. Escolha a que mais se encaixa na sua situação.
           </p>
@@ -88,11 +97,13 @@ export function Pricing() {
                     className="block w-full cursor-pointer"
                   >
                     <Button 
-                      className="w-full h-14 sm:h-16 font-extrabold uppercase tracking-wider text-sm sm:text-base md:text-lg transition-all bg-primary hover:bg-primary/90 text-black shadow-lg shadow-primary/40 animate-pulse-glow cursor-pointer px-4 sm:px-6"
+                      className="relative w-full h-14 sm:h-16 font-extrabold uppercase tracking-wider text-sm sm:text-base md:text-lg transition-all bg-primary hover:bg-primary/90 text-black shadow-[0_0_40px_rgba(245,158,11,0.8),0_0_80px_rgba(245,158,11,0.6)] animate-pulse-glow cursor-pointer px-4 sm:px-6 overflow-hidden"
                     >
-                      <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2" />
-                      <span className="whitespace-nowrap overflow-hidden text-ellipsis">Garantir Minha Vaga Agora</span>
-                      <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2" />
+                      {/* Efeito de brilho interno */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>
+                      <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2 relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]" />
+                      <span className="whitespace-nowrap overflow-hidden text-ellipsis relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]">Garantir Minha Vaga Agora</span>
+                      <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2 relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]" />
                     </Button>
                   </a>
 
@@ -171,22 +182,26 @@ export function Pricing() {
                   className="block w-full cursor-pointer"
                 >
                   <Button 
-                    className={`w-full h-12 sm:h-14 font-bold uppercase tracking-wider text-sm sm:text-base transition-all px-4 sm:px-6 ${
+                    className={`relative w-full h-12 sm:h-14 font-bold uppercase tracking-wider text-sm sm:text-base transition-all px-4 sm:px-6 overflow-hidden ${
                       pkg.price === "97,00"
-                        ? 'bg-primary hover:bg-primary/90 text-black shadow-lg shadow-primary/30'
-                        : 'bg-blue-600 hover:bg-blue-700 text-white'
+                        ? 'bg-primary hover:bg-primary/90 text-black shadow-[0_0_40px_rgba(245,158,11,0.8),0_0_80px_rgba(245,158,11,0.6)] animate-pulse-glow'
+                        : 'bg-blue-600 hover:bg-blue-700 text-white shadow-[0_0_30px_rgba(37,99,235,0.6)]'
                     }`}
                   >
+                    {/* Efeito de brilho interno para botão dourado */}
+                    {pkg.price === "97,00" && (
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>
+                    )}
                     {pkg.price === "97,00" ? (
                       <>
-                        <Zap className="w-4 h-4 mr-2" />
-                        Garantir Minha Vaga Agora
-                        <ArrowRight className="w-4 h-4 ml-2" />
+                        <Zap className="w-4 h-4 mr-2 relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]" />
+                        <span className="relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]">Garantir Minha Vaga Agora</span>
+                        <ArrowRight className="w-4 h-4 ml-2 relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]" />
                       </>
                     ) : (
                       <>
-                        Me Inscrever
-                        <ArrowRight className="w-4 h-4 ml-2" />
+                        <span className="relative z-10">Me Inscrever</span>
+                        <ArrowRight className="w-4 h-4 ml-2 relative z-10" />
                       </>
                     )}
                   </Button>

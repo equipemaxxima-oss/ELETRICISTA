@@ -12,13 +12,10 @@ export function CourseBundle() {
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             {/* Imagem */}
             <div className="flex justify-center md:justify-start relative">
-              {/* Efeito de brilho ao redor da imagem */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-primary via-primary/50 to-primary rounded-xl blur-xl opacity-50 animate-pulse"></div>
-              <div className="absolute -inset-1 bg-primary/30 rounded-lg blur-md"></div>
               <img
                 src="/images/eletrecista story12.png"
                 alt="4 Cursos em 1 - Curso Eletricista Profissional"
-                className="relative w-full max-w-md h-auto object-contain rounded-lg border-4 border-primary/80 ring-4 ring-primary/30 shadow-[0_0_40px_rgba(245,158,11,0.4)]"
+                className="relative w-full max-w-md h-auto object-contain rounded-lg border-4 border-primary/60 ring-2 ring-primary/20"
               />
             </div>
 
@@ -120,9 +117,11 @@ export function CourseBundle() {
               {/* Botão Dourado */}
               <button
                 onClick={scrollToOffer}
-                className="bg-primary hover:bg-primary/90 text-black font-extrabold text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full uppercase tracking-wider shadow-[0_0_30px_rgba(245,158,11,0.6)] animate-pulse-glow transition-all hover:scale-105 w-full md:w-auto cursor-pointer"
+                className="relative bg-primary hover:bg-primary/90 text-black font-extrabold text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full uppercase tracking-wider shadow-[0_0_50px_rgba(245,158,11,1),0_0_100px_rgba(245,158,11,0.8)] animate-pulse-glow transition-all hover:scale-105 w-full md:w-auto cursor-pointer overflow-hidden"
               >
-                QUERO SER UM ELETRICISTA
+                {/* Efeito de brilho interno */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer"></div>
+                <span className="relative z-10 drop-shadow-[0_0_5px_rgba(0,0,0,0.5)]">QUERO SER UM ELETRICISTA</span>
               </button>
             </div>
           </div>

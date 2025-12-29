@@ -12,10 +12,19 @@ export function Modules() {
             <div className="absolute -inset-2 sm:-inset-3 md:-inset-4 rounded-full border-4 border-primary/50 shadow-[0_0_30px_rgba(245,158,11,0.6)]"></div>
             <div className="absolute -inset-1 sm:-inset-1.5 md:-inset-2 rounded-full border-2 border-primary/80 shadow-[0_0_20px_rgba(245,158,11,0.8)] animate-pulse-glow"></div>
             
-            {/* Título */}
-            <h2 className="relative z-10 text-3xl md:text-5xl font-bold text-white leading-tight px-6 sm:px-8 md:px-12 py-4 sm:py-6 md:py-8">
-              O que você vai <span className="text-primary drop-shadow-[0_0_20px_rgba(245,158,11,0.8)]">aprender no curso</span>
-            </h2>
+            {/* Título com logo */}
+            <div className="relative z-10 flex items-center justify-center gap-3 px-6 sm:px-8 md:px-12 py-4 sm:py-6 md:py-8">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center p-1.5 shadow-[0_0_15px_rgba(245,158,11,0.6)] ring-2 ring-primary/30">
+                <img 
+                  src="/images/logo.png" 
+                  alt="Instituto Profissionalize" 
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+                O que você vai <span className="text-primary drop-shadow-[0_0_20px_rgba(245,158,11,0.8)]">aprender no curso</span>
+              </h2>
+            </div>
           </div>
           
           <div className="mb-4">
