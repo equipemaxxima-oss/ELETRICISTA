@@ -17,7 +17,12 @@ export function Pricing() {
             <span className="font-extrabold uppercase tracking-wide sm:tracking-widest text-xs sm:text-sm md:text-base lg:text-lg relative z-10 whitespace-nowrap">Oferta por tempo limitado</span>
           </div>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
+          {/* ============================================
+              TEXTO OCULTO - TÍTULO E DESCRIÇÃO
+              Guardado para visualização futura
+              Para reativar, descomente o bloco abaixo
+              ============================================ */}
+          {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
             <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-primary flex items-center justify-center p-1 sm:p-1.5 shadow-[0_0_15px_rgba(245,158,11,0.6)] ring-2 ring-primary/30 shrink-0">
               <img 
                 src="/images/logo.png" 
@@ -31,7 +36,7 @@ export function Pricing() {
           </div>
           <p className="text-white max-w-2xl mx-auto">
             Duas opções incríveis de investimento. Escolha a que mais se encaixa na sua situação.
-          </p>
+          </p> */}
         </div>
 
         {/* Pacote Destaque - R$ 97,00 (SUPER OFERTA ➜ Maior economia) */}
@@ -40,9 +45,9 @@ export function Pricing() {
             .filter((pkg) => pkg.price === "97,00")
             .map((pkg, index) => (
               <div className="relative pt-8 sm:pt-10 md:pt-12">
-                {/* Badge MAIS ECONÔMICO - posicionado acima do card */}
+                {/* Badge SUPER ECONOMIA - posicionado acima do card */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-primary text-black px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-2.5 rounded-full font-extrabold text-[10px] sm:text-xs md:text-sm uppercase tracking-wider sm:tracking-widest whitespace-nowrap z-30 shadow-[0_0_20px_rgba(245,158,11,0.8)]">
-                  ⭐ MAIS ECONÔMICO ⭐
+                  ⭐ SUPER ECONOMIA ⭐
                 </div>
               <Card 
                 key={`highlight-${index}`} 
@@ -133,8 +138,13 @@ export function Pricing() {
             ))}
         </div>
 
+        {/* ============================================
+            CONTAINER OCULTO - PACOTE BÁSICO (R$ 197,00)
+            Guardado para visualização futura
+            Para reativar, descomente o bloco abaixo
+            ============================================ */}
         {/* Outros pacotes */}
-        <div className="flex justify-center items-stretch px-2 sm:px-0">
+        {/* <div className="flex justify-center items-stretch px-2 sm:px-0">
           <div className="w-full max-w-md">
             {COURSE_CONTENT.packages
               .filter((pkg) => pkg.price !== "97,00")
@@ -148,10 +158,10 @@ export function Pricing() {
               }`}
             >
               {/* Carimbo VÍDEO AULAS + APOSTILA */}
-              <div className="absolute top-2 sm:top-4 right-2 sm:right-4 transform rotate-12 z-10 pointer-events-none">
+              {/* <div className="absolute top-2 sm:top-4 right-2 sm:right-4 transform rotate-12 z-10 pointer-events-none">
                 <div className="bg-primary text-black px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg border-2 border-black/20 shadow-[0_4px_8px_rgba(0,0,0,0.3)] relative">
                   {/* Efeito de carimbo com borda tracejada */}
-                  <div className="absolute inset-0 border-2 border-dashed border-black/30 rounded-lg pointer-events-none"></div>
+                  {/* <div className="absolute inset-0 border-2 border-dashed border-black/30 rounded-lg pointer-events-none"></div>
                   <p className="font-extrabold text-[10px] sm:text-xs uppercase tracking-tight leading-tight text-center relative z-10">
                     VÍDEO AULAS<br />+ APOSTILA
                   </p>
@@ -163,7 +173,7 @@ export function Pricing() {
                   {pkg.name.includes("SUPER OFERTA") ? (
                     <span className="relative inline-block">
                       {/* Efeito de luz ao redor */}
-                      <span className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                      {/* <span className="absolute inset-0 flex items-center justify-center pointer-events-none">
                         <span className="text-primary/30 blur-xl animate-pulse-slow">{pkg.name}</span>
                       </span>
                       <span className="relative z-10 drop-shadow-[0_0_10px_rgba(245,158,11,0.8)] text-primary animate-pulse">{pkg.name}</span>
@@ -177,7 +187,7 @@ export function Pricing() {
 
               <CardContent className="flex-1 flex flex-col items-center px-4 sm:px-6">
                 {/* Pricing */}
-                <div className="text-center my-6 pb-6 border-b border-white/10 w-full">
+                {/* <div className="text-center my-6 pb-6 border-b border-white/10 w-full">
                   <p className="text-white/70 line-through text-sm mb-2">De R$ {pkg.originalPrice}</p>
                   <div className="flex items-center justify-center gap-2">
                     <span className="text-primary font-bold">Por apenas</span>
@@ -190,7 +200,7 @@ export function Pricing() {
                 </div>
 
                 {/* Features */}
-                <ul className="space-y-3 mb-8 flex-1 w-full">
+                {/* <ul className="space-y-3 mb-8 flex-1 w-full">
                   {pkg.included.map((item, i) => (
                     <li key={i} className="flex items-start justify-center gap-3">
                       <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center shrink-0 mt-0.5">
@@ -202,7 +212,7 @@ export function Pricing() {
                 </ul>
 
                 {/* CTA Button */}
-                <a 
+                {/* <a 
                   href={pkg.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -216,7 +226,7 @@ export function Pricing() {
                     }`}
                   >
                     {/* Efeito de brilho interno para botão dourado */}
-                    {pkg.price === "97,00" && (
+                    {/* {pkg.price === "97,00" && (
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>
                     )}
                     {pkg.price === "97,00" ? (
@@ -235,7 +245,7 @@ export function Pricing() {
                 </a>
 
                 {/* Security badge */}
-                <div className="mt-4 pt-4 border-t border-white/10">
+                {/* <div className="mt-4 pt-4 border-t border-white/10">
                   <div className="flex items-center justify-center gap-2 bg-green-500/10 border border-green-500/30 rounded-lg px-4 py-2">
                     <span className="text-lg">🔒</span>
                     <span className="text-sm font-semibold text-green-400">Pagamento seguro via Hotmart</span>
@@ -244,11 +254,16 @@ export function Pricing() {
               </CardContent>
             </Card>
           ))}
-          </div>
         </div>
+        </div> */}
 
+        {/* ============================================
+            CONTAINER OCULTO - SEÇÃO "ENTENDA A DIFERENÇA"
+            Guardado para visualização futura
+            Para reativar, descomente o bloco abaixo
+            ============================================ */}
         {/* Explicação dos Pacotes */}
-        <div className="mt-8 sm:mt-10 md:mt-12 mb-6 sm:mb-8 max-w-4xl mx-auto px-3 sm:px-4">
+        {/* <div className="mt-8 sm:mt-10 md:mt-12 mb-6 sm:mb-8 max-w-4xl mx-auto px-3 sm:px-4">
           <div className="bg-card/50 border-2 border-primary/30 rounded-xl p-4 sm:p-5 md:p-6 lg:p-8 backdrop-blur-sm">
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-3 sm:mb-4 text-center">
               <span className="text-primary">Entenda a Diferença:</span>
@@ -279,7 +294,7 @@ export function Pricing() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
