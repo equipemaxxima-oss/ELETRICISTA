@@ -10,20 +10,31 @@ export function CertificateSection() {
           <div className="order-2 lg:order-1 relative">
              {/* Glow effect */}
              <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
+             {/* Efeito de brilho ao redor da imagem */}
+             <div className="absolute -inset-2 bg-gradient-to-r from-primary via-primary/50 to-primary rounded-xl blur-xl opacity-50 animate-pulse"></div>
+             <div className="absolute -inset-1 bg-primary/30 rounded-lg blur-md"></div>
              <img 
               src={certificateImage} 
               alt="Certificado do Curso" 
-              className="relative w-full drop-shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-500"
+              className="relative w-full drop-shadow-2xl rounded-lg transform hover:scale-105 transition-transform duration-500 border-4 border-primary/80 ring-4 ring-primary/30 shadow-[0_0_40px_rgba(245,158,11,0.4)]"
              />
           </div>
 
-          <div className="order-1 lg:order-2 space-y-6">
+          <div className="order-1 lg:order-2 space-y-6 relative">
             <div className="inline-block px-4 py-1 rounded-full bg-green-500/10 text-green-500 font-medium text-sm mb-2 border border-green-500/20">
               Certificado Incluso Gratuitamente
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-white">
-              Certificado Válido em <span className="text-primary">Todo o Brasil</span>
-            </h2>
+            <div className="flex items-center gap-3 flex-wrap">
+              <h2 className="text-3xl md:text-5xl font-bold text-white">
+                Certificado Válido em <span className="text-primary">Todo o Brasil</span>
+              </h2>
+              {/* Selo do Ministério */}
+              <img
+                src="/images/MINISTERIO EDUCACAO.jpg"
+                alt="Ministério da Educação - Brasil"
+                className="h-8 md:h-10 lg:h-12 w-auto object-contain opacity-90"
+              />
+            </div>
             <p className="text-gray-400 text-lg">
               Ao finalizar o curso, você recebe automaticamente seu certificado. Com ele, você pode comprovar sua competência e atuar legalmente em todo o território nacional.
             </p>
@@ -46,9 +57,9 @@ export function CertificateSection() {
                     <Check className="w-5 h-5 text-green-500" />
                     <span>Assinado pela diretoria</span>
                  </li>
-                 <li className="flex items-center gap-3 text-gray-300">
-                    <Check className="w-5 h-5 text-green-500" />
-                    <span>Emissão imediata após conclusão</span>
+                 <li className="flex items-start gap-3 text-gray-300">
+                    <Check className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>Emissão digital imediata após conclusão. Você pode imprimir quantas vias que precisar.</span>
                  </li>
               </ul>
             </div>

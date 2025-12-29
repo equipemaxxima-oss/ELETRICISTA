@@ -1,50 +1,47 @@
 import { COURSE_CONTENT } from "@/lib/constants";
-import { CheckCircle2 } from "lucide-react";
 
 export function Modules() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 bg-background">
       <div className="container px-4 md:px-6">
-        <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-4 text-center md:text-left">
-          O que você vai <span className="text-primary">aprender no curso</span>
-        </h2>
-        <p className="text-gray-400 text-lg max-w-2xl mb-12 text-center md:text-left">
-          Um cronograma completo, do básico ao avançado, desenvolvido para te preparar para o mercado de trabalho real.
-        </p>
-
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          {/* Info Box */}
-          <div className="lg:col-span-1 p-6 bg-card border border-white/5 rounded-2xl h-fit">
-            <h3 className="text-xl font-bold text-white mb-4">Para quem é este curso?</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
-                <span className="text-gray-300">Iniciantes absolutos (do zero)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
-                <span className="text-gray-300">Quem busca uma nova profissão rápida</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-1" />
-                <span className="text-gray-300">Sem exigência de Ensino Médio completo</span>
-              </li>
-            </ul>
+        <div className="text-center mb-8">
+          {/* Título com círculo dourado e efeitos de destaque */}
+          <div className="relative inline-block mb-6">
+            {/* Círculo dourado decorativo ao redor */}
+            <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 rounded-full bg-primary/20 blur-2xl animate-pulse"></div>
+            <div className="absolute -inset-2 sm:-inset-3 md:-inset-4 rounded-full border-4 border-primary/50 shadow-[0_0_30px_rgba(245,158,11,0.6)]"></div>
+            <div className="absolute -inset-1 sm:-inset-1.5 md:-inset-2 rounded-full border-2 border-primary/80 shadow-[0_0_20px_rgba(245,158,11,0.8)] animate-pulse-glow"></div>
+            
+            {/* Título */}
+            <h2 className="relative z-10 text-3xl md:text-5xl font-bold text-white leading-tight px-6 sm:px-8 md:px-12 py-4 sm:py-6 md:py-8">
+              O que você vai <span className="text-primary drop-shadow-[0_0_20px_rgba(245,158,11,0.8)]">aprender no curso</span>
+            </h2>
           </div>
+          
+          <div className="mb-4">
+            <p className="text-primary font-bold text-lg md:text-xl">Aulas em Vídeo + Apostila</p>
+          </div>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Um cronograma completo, do básico ao avançado, desenvolvido para te preparar para o mercado de trabalho real.
+          </p>
+        </div>
 
-          {/* Modules Grid */}
-          <div className="lg:col-span-2 grid gap-3">
-            {COURSE_CONTENT.modules.map((module, index) => (
-              <div 
-                key={index}
-                className="group flex items-center p-4 bg-card hover:bg-white/5 border border-white/5 rounded-xl transition-all hover:translate-x-2"
-              >
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold mr-4 shrink-0 group-hover:bg-primary group-hover:text-background transition-colors">
-                  {index + 1}
+        <div className="mb-8">
+          {/* Modules Grid - 3 colunas otimizadas e compactas */}
+          <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-2">
+              {COURSE_CONTENT.modules.map((module, index) => (
+                <div 
+                  key={index}
+                  className="group flex items-center p-1.5 md:p-2 bg-card hover:bg-white/5 border border-white/5 rounded-md transition-all hover:translate-x-1"
+                >
+                  <div className="w-6 h-6 md:w-7 md:h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs md:text-sm mr-1.5 md:mr-2 shrink-0 group-hover:bg-primary group-hover:text-background transition-colors">
+                    {index + 1}
+                  </div>
+                  <p className="text-gray-200 font-medium text-xs md:text-sm leading-tight">{module}</p>
                 </div>
-                <p className="text-gray-200 font-medium">{module}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

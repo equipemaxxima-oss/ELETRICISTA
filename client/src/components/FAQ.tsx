@@ -8,8 +8,8 @@ import { COURSE_CONTENT } from "@/lib/constants";
 
 export function FAQ() {
   return (
-    <section className="py-20 bg-background border-t border-white/5">
-      <div className="container px-4 md:px-6 max-w-3xl">
+    <section data-section="faq" className="py-20 bg-background border-t border-white/5">
+      <div className="container px-4 md:px-6 max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
           Perguntas Frequentes
         </h2>
@@ -17,7 +17,7 @@ export function FAQ() {
         <Accordion type="single" collapsible className="w-full space-y-4">
           {COURSE_CONTENT.faq.map((item, index) => (
             <AccordionItem key={index} value={`item-${index}`} className="border border-white/10 bg-card rounded-lg px-4">
-              <AccordionTrigger className="text-white hover:text-primary hover:no-underline py-4 text-left">
+              <AccordionTrigger className="text-white hover:text-primary hover:no-underline py-4 text-left text-lg md:text-xl font-semibold">
                 {item.question}
               </AccordionTrigger>
               <AccordionContent className="text-gray-400 pb-4">

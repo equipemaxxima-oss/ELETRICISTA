@@ -3,20 +3,43 @@ export const COURSE_CONTENT = {
   price: "27,99",
   oldPrice: "197,00",
   modules: [
-    "Apresentação do Curso e Normas de Segurança",
-    "Ferramentas e Instrumentos",
-    "Conceitos de Eletricidade Básica",
-    "Introdução a GTD (Geração, Transmissão e Distribuição)",
-    "Medições Elétricas",
-    "Interpretação de Projetos Elétricos",
-    "Representação de Diagramas",
-    "Principais Modelos de Lâmpadas",
-    "Instalações Elétricas Residenciais (Passo a Passo)",
-    "Condutores Elétricos",
-    "Dispositivos de Proteção Elétrica",
-    "Quadro de Distribuição",
-    "Dimensionamento da Instalação",
-    "Fornecimento de Energia"
+    "Apresentação do Curso",
+    "Normas de segurança Parte 1",
+    "Normas de segurança Parte 2",
+    "Ferramentas e instrumentos parte 1",
+    "Ferramentas e instrumentos parte 2",
+    "Conceitos de eletricidade básica parte 1",
+    "Conceitos de eletricidade básica parte 2",
+    "Introdução a GTD parte 1",
+    "Introdução A GTD parte 2",
+    "Introdução A GTD parte 3",
+    "Medições Elétricas parte 1",
+    "Medições Elétricas parte 2",
+    "Medições Elétricas parte 3",
+    "Interpretações de projetos parte 1",
+    "Interpretações de projetos parte 2",
+    "Interpretações de projetos parte 3",
+    "Interpretações de projetos parte 4",
+    "Interpretações de projetos parte 5",
+    "Representação de Diagramas parte 1",
+    "Representação de Diagramas parte 2",
+    "Principais modelos de lâmpadas parte 1",
+    "Principais modelos de lâmpadas parte 2",
+    "Principais modelos de lâmpadas parte 3",
+    "Instalações Elétricas Residenciais 1",
+    "Instalações Elétricas Residenciais parte 2",
+    "Instalações Elétricas residenciais parte 3",
+    "Instalações elétricas residenciais parte 4",
+    "Instalações elétricas residenciais parte 5",
+    "Instalações elétricas residenciais parte 6",
+    "Instalações elétricas residenciais parte 7",
+    "Condutores elétricos",
+    "Dispositivos de proteção elétrica parte 1",
+    "Dispositivos de proteção elétrica parte 2",
+    "Quadro de distribuição",
+    "Dimensionamento da instalação parte 1",
+    "Dimensionamento da instalação parte 2",
+    "Fornecimento de energia"
   ],
   bonuses: [
     {
@@ -31,7 +54,7 @@ export const COURSE_CONTENT = {
     },
     {
       title: "Carta de Estágio",
-      description: "Documento para facilitar a obtenção de vagas de estágio na área.",
+      description: "Este documento ajudará o aluno a conseguir uma vaga de estágio na área, para que consiga colocar em prática tudo que aprendeu durante seu curso.",
       image: "internship"
     }
   ],
@@ -46,44 +69,46 @@ export const COURSE_CONTENT = {
     },
     {
       question: "Quanto tempo de acesso?",
-      answer: "Você terá acesso vitalício ao conteúdo do curso para rever quantas vezes quiser."
+      answer: "Você terá acesso vitalício ao conteúdo do curso para rever quantas vezes quiser por 1 ano."
     },
     {
       question: "Como recebo o acesso?",
       answer: "Assim que o pagamento for confirmado, você receberá um e-mail com seus dados de login para nossa plataforma de alunos."
+    },
+    {
+      question: "Quais são as formas de pagamento?",
+      answer: "O investimento pode ser pago em cartão de crédito ou PIX diretamente no checkout seguro. Seu pagamento é feito através da plataforma da Hotmart em ambiente seguro."
     }
   ],
   packages: [
     {
       name: "Curso Completo",
-      description: "Perfeito para iniciantes",
+      description: "Básico",
       originalPrice: "197,00",
       price: "27,99",
       included: [
         "Curso Completo Online: Eletricista",
-        "Certificado GRÁTIS Válido em todo Brasil",
-        "12 LIVROS GRATUITOS para baixar",
-        "Acesso Vitalício",
-        "Garantia de 7 Dias"
+        "Certificado GRÁTIS Válido para todo o Brasil.",
+        "Bônus: 12 LIVROS GRATUITOS best sellers para baixar",
+        "7 Dias de Garantia Incondicional"
       ],
       highlighted: false,
       link: "https://pay.hotmart.com/E82907236E?off=ha8efo4w&checkoutMode=10&bid=1708016430164"
     },
     {
-      name: "Super Oferta",
-      description: "Mais vendido",
-      badge: "MAIS VENDIDO",
+      name: "Oferta",
+      description: "Pacote intermediário",
+      badge: null,
       originalPrice: "278,00",
       price: "67,99",
       included: [
         "Curso Completo Online: Eletricista",
-        "Bônus: Carta de Recomendação Profissional",
-        "Bônus: Currículo de Alto Impacto",
-        "Bônus: Carta de Estágio",
-        "Certificado GRÁTIS Válido em todo Brasil",
-        "12 LIVROS GRATUITOS para baixar",
-        "Acesso Vitalício",
-        "Garantia de 7 Dias"
+        "Bônus 01: Carta de Recomendação Profissional",
+        "Bônus 02: Currículo de Alto Impacto",
+        "Bônus 03: Carta de Estágio",
+        "Certificado GRÁTIS Válido para todo o Brasil.",
+        "Bônus: 12 LIVROS GRATUITOS para baixar",
+        "7 Dias de Garantia Incondicional"
       ],
       highlighted: true,
       link: "https://pay.hotmart.com/E82907236E?off=0phkqnl0&checkoutMode=10&bid=1703881276091"
@@ -94,13 +119,16 @@ export const COURSE_CONTENT = {
       originalPrice: "788,00",
       price: "97,00",
       included: [
-        "4 Cursos Profissionalizantes Completos",
-        "Eletricista + 3 Cursos Adicionais",
+        "4 Cursos em 1",
+        "✓ Curso eletricista profissional",
+        "✓ Curso NR-10",
+        "✓ Curso NR-25",
+        "✓ Curso energia Solar",
         "Certificados para cada curso",
-        "Acesso Vitalício a todos",
-        "Bônus: 12 LIVROS GRATUITOS",
-        "Garantia de 7 Dias",
-        "Economize R$ 691!"
+        "Certificado GRÁTIS Válido para todo o Brasil.",
+        "Bônus: 12 LIVROS GRATUITOS para baixar",
+        "Economize R$ 691,00",
+        "7 Dias de Garantia Incondicional"
       ],
       highlighted: false,
       link: "https://pay.hotmart.com/K96173332H?checkoutMode=10"
