@@ -36,11 +36,13 @@ export function Hero() {
                   />
                 </div>
               </div>
-              {/* Imagem +25000 alunos */}
+              {/* Imagem +25000 alunos - Recarregada */}
               <img 
                 src="/images/+25.000 alunos.png" 
                 alt="Mais de 25.000 Alunos Formados" 
                 className="h-16 sm:h-20 md:h-28 lg:h-32 w-auto object-contain"
+                loading="eager"
+                decoding="async"
               />
             </div>
             
