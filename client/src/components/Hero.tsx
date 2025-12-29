@@ -102,18 +102,17 @@ export function Hero() {
                 allowFullScreen
               ></iframe>
               
-              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-4 sm:p-6 pointer-events-none">
-                <div className="relative inline-block w-full">
-                  {/* Efeito de luz ao redor - reduzido */}
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-full h-full bg-primary/15 blur-xl rounded-lg animate-pulse-slow"></div>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-full h-full bg-primary/10 blur-lg rounded-lg animate-pulse-slow delay-100"></div>
-                  </div>
-                  <p className="relative z-10 text-white font-bold text-sm sm:text-base md:text-lg text-center drop-shadow-[0_0_5px_rgba(245,158,11,0.5)] text-shadow-[0_0_10px_rgba(245,158,11,0.3)]">
-                    Ative o som do vídeo
-                  </p>
+              {/* Tarja ATIVE O SOM colada na parte superior do vídeo */}
+              <div className="absolute top-0 left-0 right-0 z-20 pointer-events-none animate-blink-1min">
+                <div className="relative bg-primary text-black py-2 sm:py-2.5 px-3 sm:px-4 text-center font-extrabold text-[10px] sm:text-xs md:text-sm uppercase tracking-wide border-b-2 border-black/20 shadow-[0_0_30px_rgba(245,158,11,1),0_0_60px_rgba(245,158,11,0.8),0_0_90px_rgba(245,158,11,0.6)]">
+                  {/* Efeitos de luz neon amarela - múltiplas camadas */}
+                  <div className="absolute -inset-4 bg-primary blur-2xl opacity-90 animate-pulse"></div>
+                  <div className="absolute -inset-3 bg-primary blur-xl opacity-70 animate-pulse delay-100"></div>
+                  <div className="absolute -inset-2 bg-primary blur-lg opacity-60 animate-pulse"></div>
+                  <div className="absolute -inset-1 bg-primary blur-md opacity-50"></div>
+                  <span className="relative z-10 drop-shadow-[0_0_15px_rgba(245,158,11,1),0_0_30px_rgba(245,158,11,0.9),0_0_45px_rgba(245,158,11,0.7)] text-shadow-[0_0_8px_rgba(0,0,0,0.8),0_0_15px_rgba(245,158,11,0.5)]">
+                    🔊 ATIVE O SOM DO VÍDEO
+                  </span>
                 </div>
               </div>
             </div>

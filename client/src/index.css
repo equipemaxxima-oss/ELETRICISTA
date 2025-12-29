@@ -126,3 +126,27 @@
 .delay-100 {
   animation-delay: 0.1s;
 }
+
+@keyframes blink-1min {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  99% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-blink-1min {
+  animation: blink-1min 4s ease-in-out;
+  animation-iteration-count: 15;
+  animation-fill-mode: forwards;
+}
