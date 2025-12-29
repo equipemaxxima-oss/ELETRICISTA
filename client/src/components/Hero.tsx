@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, ShieldCheck, PlayCircle } from "lucide-react";
-import professionalImage from "@assets/generated_images/professional_electrician_working_on_a_panel.png";
+import { CheckCircle2, ShieldCheck } from "lucide-react";
 import toolsBg from "@assets/generated_images/electrician_tools_background_texture.png";
 
 export function Hero() {
@@ -83,7 +82,7 @@ export function Hero() {
           </div>
 
           {/* Hero Image/Video Placeholder */}
-          <div className="relative mx-auto lg:ml-auto w-full max-w-full sm:max-w-md lg:max-w-[500px] space-y-3 sm:space-y-4 mt-8 lg:mt-0">
+          <div className="relative mx-auto lg:ml-auto w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[400px] space-y-3 sm:space-y-4 mt-8 lg:mt-0">
             {/* Banner Dourado - Botão Clicável */}
             <button
               onClick={scrollToOffer}
@@ -94,33 +93,29 @@ export function Hero() {
               <span className="block mt-0.5 sm:mt-1 text-[10px] sm:text-xs md:text-sm">COM BOLSA DE ESTUDO</span>
             </button>
             
-            <div className="relative aspect-[4/5] rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 border-white/5 shadow-2xl group cursor-pointer">
-            <img 
-              src={professionalImage} 
-              alt="Eletricista Profissional" 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition-colors">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-primary/90 rounded-full flex items-center justify-center shadow-lg backdrop-blur-sm group-hover:scale-110 transition-transform">
-                <PlayCircle className="w-8 h-8 sm:w-10 sm:h-10 text-background fill-background" />
-              </div>
-            </div>
-            
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-4 sm:p-6">
-              <div className="relative inline-block w-full">
-                {/* Efeito de luz ao redor - reduzido */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-full h-full bg-primary/15 blur-xl rounded-lg animate-pulse-slow"></div>
+            <div className="relative w-full rounded-xl sm:rounded-2xl overflow-hidden border-2 sm:border-4 border-white/5 shadow-2xl" style={{ aspectRatio: '9/16' }}>
+              <iframe
+                src="https://www.youtube.com/embed/4tYZV8JVNs0?autoplay=1&mute=1&loop=1&playlist=4tYZV8JVNs0&controls=1&modestbranding=1&rel=0&playsinline=1"
+                title="Vídeo de Apresentação - Curso Eletricista Profissional"
+                className="w-full h-full absolute top-0 left-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+              
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-4 sm:p-6 pointer-events-none">
+                <div className="relative inline-block w-full">
+                  {/* Efeito de luz ao redor - reduzido */}
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="w-full h-full bg-primary/15 blur-xl rounded-lg animate-pulse-slow"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="w-full h-full bg-primary/10 blur-lg rounded-lg animate-pulse-slow delay-100"></div>
+                  </div>
+                  <p className="relative z-10 text-white font-bold text-sm sm:text-base md:text-lg text-center drop-shadow-[0_0_5px_rgba(245,158,11,0.5)] text-shadow-[0_0_10px_rgba(245,158,11,0.3)]">
+                    Ative o som do vídeo
+                  </p>
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-full h-full bg-primary/10 blur-lg rounded-lg animate-pulse-slow delay-100"></div>
-                </div>
-                <p className="relative z-10 text-white font-bold text-sm sm:text-base md:text-lg text-center drop-shadow-[0_0_5px_rgba(245,158,11,0.5)] text-shadow-[0_0_10px_rgba(245,158,11,0.3)]">
-                  Ative o som do vídeo
-                </p>
               </div>
-            </div>
             </div>
           </div>
 
